@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hrmn.Web - About</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <div class="container">
+        <center>
+          <h2 class="shoelace-heading">About Me</h2>
+          <br />
+        </center>
+        <div class="row">
+          <div class="col-md-6">
+            <center>
+              <img
+                src="Harman high res.png"
+                width="350px"
+                alt="Profile Picture"
+                class="img-fluid"
+              />
+            </center>
+          </div>
+          <div class="col-md-6" style="margin-top: 10px">
+            <p id="typed-paragraph" class="shoelace-paragraph"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-navbar">
+      <a class="nav-icon" href="index.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-icon" href="about.html">
+        <i class="fas fa-user"></i>
+      </a>
+      <a class="nav-icon" href="contact.html">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      // Wait for the document to fully load
+      document.addEventListener("DOMContentLoaded", function () {
+        // Define the strings for the typing animation
+        var strings = [
+          "Hi there! I'm Hrmn.Web, a passionate developer. I\nlove creating innovative projects and bringing ideas to life. My\njourney in web development began at a young age, driven by\nmy curiosity for coding. I have been continuously exploring various\ntechnologies and domains.",
+          "Currently, I'm focused on building web applications that provide value to users and have an appealing user experience.",
+          "Feel free to explore my projects and get in touch if you have any\nquestions or collaboration ideas!",
+        ];
+
+        // Initialize Typed.js
+        var typed = new Typed("#typed-paragraph", {
+          strings: strings,
+          typeSpeed: 10,
+          startDelay: 500, // Delay before typing starts (in milliseconds)
+          showCursor: false,
+        });
+      });
+    </script>
+  </body>
+</html>
